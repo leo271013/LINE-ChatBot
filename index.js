@@ -10,21 +10,21 @@ const bot = linebot({
 })
 
 bot.on('message', async (event) => {
-  if (event.message.type === 'text' && event.message.text === '課程') {
+  if (event.message.type === 'text' && event.message.text === '!早') {
     try {
-      const { data } = await axios.get('https://wdaweb.github.io/')
+      const { data } = await axios.get('https://iding.tw/stores/87c5d56a/menu')
       const $ = cheerio.load(data)
       const replies = []
-      for (let i = 0; i < $('#go .col-lg-3.col-md-6').length; i++) {
-        replies.push(`課程名稱:\n${$('#go .col-lg-3.col-md-6').eq(i).find('h4').text()}\n報名資訊: \n${$('#go .col-lg-3.col-md-6').eq(3).find('.card-description').text().trim().replace(/\t/g, '')}`)
-      }
+
+      replies.push(`餐點:\n${$('.mt-3').eq(0).find('p').eq(0).text()}`)
+
       event.reply(replies)
     } catch (error) {
       console.log(error)
-      event.reply('拍謝 出錯了')
+      event.reply('出錯了')
     }
   } else {
-    event.reply('你在打什麼挖溝')
+    event.reply('格式錯誤!!!')
   }
 })
 
