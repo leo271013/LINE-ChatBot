@@ -3,6 +3,12 @@ import linebot from 'linebot'
 import axios from 'axios'
 import cheerio from 'cheerio'
 
+const foodtype = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 18]
+let random1 = 0
+let random2 = 0
+let lengths = 0
+let drandom = 0
+
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
   channelSecret: process.env.CHANNEL_SECRET,
@@ -10,13 +16,28 @@ const bot = linebot({
 })
 
 bot.on('message', async (event) => {
-  if (event.message.type === 'text' && event.message.text === '!早') {
+  if (event.message.type === 'text' && event.message.text === '早') {
     try {
-      const { data } = await axios.get('https://iding.tw/stores/87c5d56a/menu')
+      const { data } = await axios.get('https://www.macc.com.tw/product.php')
       const $ = cheerio.load(data)
-      const replies = []
+      random1 = `#${foodtype[Math.floor(Math.random() * 11)]}`
+      lengths = $(`${random1}`).find('li').length
+      random2 = `${Math.floor(Math.random() * lengths)}`
 
-      replies.push(`餐點:\n${$('.mt-3').eq(0).find('p').eq(0).text()}`)
+      const replies = []
+      const drinks = []
+
+      for (let i = 0; i < $('#16').find('li').length; i++) {
+        drinks.push($('#16').find('li').eq(i).find('a').text())
+      }
+
+      for (let i = 0; i < $('#17').find('li').length; i++) {
+        drinks.push($('#17').find('li').eq(i).find('a').text())
+      }
+
+      drandom = drinks[Math.floor(Math.random() * drinks.length)]
+
+      replies.push(`早餐吃\n${$(`${random1}`).find('li').eq(random2).find('a').text()}\n配\n${drandom}`)
 
       event.reply(replies)
     } catch (error) {
@@ -24,7 +45,7 @@ bot.on('message', async (event) => {
       event.reply('出錯了')
     }
   } else {
-    event.reply('格式錯誤!!!')
+    event.reply('格式錯誤!，請輸入"早"')
   }
 })
 
