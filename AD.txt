@@ -26,9 +26,11 @@
         "contents": [
           {
             "type": "text",
-            "text": "Brown's Burger",
-            "size": "xl",
-            "weight": "bold"
+            "text": "哈密瓜",
+            "size": "xxl",
+            "weight": "bold",
+            "color": "#FFFFFF",
+            "style": "italic"
           },
           {
             "type": "box",
@@ -45,10 +47,11 @@
                   },
                   {
                     "type": "text",
-                    "text": "$10.5",
+                    "text": "NT.50",
                     "weight": "bold",
                     "margin": "sm",
-                    "flex": 0
+                    "flex": 0,
+                    "color": "#FFFFFF"
                   }
                 ]
               }
@@ -58,12 +61,12 @@
             "type": "text",
             "text": "圖片價格僅供參考",
             "wrap": true,
-            "color": "#aaaaaa",
+            "color": "#ffffff",
             "size": "xxs",
             "align": "center"
           }
         ],
-        "backgroundColor": "#161611"
+        "backgroundColor": "#AA0022"
       }
     },
     {
@@ -91,9 +94,12 @@
         "contents": [
           {
             "type": "text",
-            "text": "Brown's Burger",
-            "size": "xl",
-            "weight": "bold"
+            "text": "豆花",
+            "size": "xxl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "style": "italic",
+            "decoration": "none"
           },
           {
             "type": "box",
@@ -106,14 +112,15 @@
                 "contents": [
                   {
                     "type": "icon",
-                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/restaurant_regular_32.png"
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png"
                   },
                   {
                     "type": "text",
-                    "text": "$10.5",
+                    "text": "NT.30",
                     "weight": "bold",
                     "margin": "sm",
-                    "flex": 0
+                    "flex": 0,
+                    "color": "#FFFFFF"
                   }
                 ]
               }
@@ -121,12 +128,14 @@
           },
           {
             "type": "text",
-            "text": "84646546",
+            "text": "圖片價格僅供參考",
             "wrap": true,
-            "color": "#aaaaaa",
-            "size": "xxs"
+            "color": "#ffffff",
+            "size": "xxs",
+            "align": "center"
           }
-        ]
+        ],
+        "backgroundColor": "#FFAA55"
       }
     }
   ]

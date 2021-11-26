@@ -2,153 +2,145 @@ export default {
   type: 'flex',
   altText: '123456',
   contents: {
-    type: 'bubble',
-    hero: {
-      type: 'image',
-      url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png',
-      size: 'full',
-      aspectRatio: '20:13',
-      aspectMode: 'cover',
-      action: {
-        type: 'uri',
-        uri: 'http://linecorp.com/'
-      }
-    },
-    body: {
-      type: 'box',
-      layout: 'vertical',
-      contents: [
-        {
-          type: 'text',
-          text: 'Brown Cafe',
-          weight: 'bold',
-          size: 'xl'
+    type: 'carousel',
+    contents: [
+      {
+        type: 'bubble',
+        size: 'micro',
+        hero: {
+          type: 'image',
+          url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png',
+          size: 'full',
+          aspectRatio: '20:13',
+          aspectMode: 'cover',
+          action: {
+            type: 'uri',
+            uri: 'https://linecorp.com'
+          }
         },
-        {
+        body: {
           type: 'box',
-          layout: 'baseline',
-          margin: 'md',
+          layout: 'vertical',
+          spacing: 'md',
+          action: {
+            type: 'uri',
+            uri: 'https://linecorp.com'
+          },
           contents: [
             {
-              type: 'icon',
-              size: 'sm',
-              url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png'
+              type: 'text',
+              text: '哈密瓜',
+              size: 'lg',
+              weight: 'bold',
+              color: '#FFFFFF',
+              style: 'italic'
             },
             {
-              type: 'icon',
-              size: 'sm',
-              url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png'
-            },
-            {
-              type: 'icon',
-              size: 'sm',
-              url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png'
-            },
-            {
-              type: 'icon',
-              size: 'sm',
-              url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png'
-            },
-            {
-              type: 'icon',
-              size: 'sm',
-              url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png'
+              type: 'box',
+              layout: 'vertical',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'baseline',
+                  contents: [
+                    {
+                      type: 'icon',
+                      url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png'
+                    },
+                    {
+                      type: 'text',
+                      text: 'NT.50',
+                      weight: 'bold',
+                      margin: 'sm',
+                      flex: 0,
+                      color: '#FFFFFF'
+                    }
+                  ]
+                }
+              ]
             },
             {
               type: 'text',
-              text: '4.0',
-              size: 'sm',
-              color: '#999999',
-              margin: 'md',
-              flex: 0
+              text: '圖片價格僅供參考',
+              wrap: true,
+              color: '#ffffff',
+              size: 'xxs',
+              align: 'center'
             }
-          ]
+          ],
+          backgroundColor: '#AA0022'
+        }
+      },
+      {
+        type: 'bubble',
+        size: 'micro',
+        hero: {
+          type: 'image',
+          url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png',
+          size: 'full',
+          aspectRatio: '20:13',
+          aspectMode: 'cover',
+          action: {
+            type: 'uri',
+            uri: 'https://linecorp.com'
+          }
         },
-        {
+        body: {
           type: 'box',
           layout: 'vertical',
-          margin: 'lg',
-          spacing: 'sm',
+          spacing: 'md',
+          action: {
+            type: 'uri',
+            uri: 'https://linecorp.com'
+          },
           contents: [
             {
+              type: 'text',
+              text: '豆花',
+              size: 'lg',
+              weight: 'bold',
+              color: '#ffffff',
+              style: 'italic',
+              decoration: 'none'
+            },
+            {
               type: 'box',
-              layout: 'baseline',
+              layout: 'vertical',
               spacing: 'sm',
               contents: [
                 {
-                  type: 'text',
-                  text: 'Place',
-                  color: '#aaaaaa',
-                  size: 'sm',
-                  flex: 1
-                },
-                {
-                  type: 'text',
-                  text: 'Miraina Tower, 4-1-6 Shinjuku, Tokyo',
-                  wrap: true,
-                  color: '#666666',
-                  size: 'sm',
-                  flex: 5
+                  type: 'box',
+                  layout: 'baseline',
+                  contents: [
+                    {
+                      type: 'icon',
+                      url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png'
+                    },
+                    {
+                      type: 'text',
+                      text: 'NT.30',
+                      weight: 'bold',
+                      margin: 'sm',
+                      flex: 0,
+                      color: '#FFFFFF'
+                    }
+                  ]
                 }
               ]
             },
             {
-              type: 'box',
-              layout: 'baseline',
-              spacing: 'sm',
-              contents: [
-                {
-                  type: 'text',
-                  text: 'Time',
-                  color: '#aaaaaa',
-                  size: 'sm',
-                  flex: 1
-                },
-                {
-                  type: 'text',
-                  text: '10:00 - 23:00',
-                  wrap: true,
-                  color: '#666666',
-                  size: 'sm',
-                  flex: 5
-                }
-              ]
+              type: 'text',
+              text: '圖片價格僅供參考',
+              wrap: true,
+              color: '#ffffff',
+              size: 'xxs',
+              align: 'center'
             }
-          ]
+          ],
+          backgroundColor: '#FFAA55'
         }
-      ]
-    },
-    footer: {
-      type: 'box',
-      layout: 'vertical',
-      spacing: 'sm',
-      contents: [
-        {
-          type: 'button',
-          style: 'link',
-          height: 'sm',
-          action: {
-            type: 'uri',
-            label: 'CALL',
-            uri: 'https://linecorp.com'
-          }
-        },
-        {
-          type: 'button',
-          style: 'link',
-          height: 'sm',
-          action: {
-            type: 'uri',
-            label: 'WEBSITE',
-            uri: 'https://linecorp.com'
-          }
-        },
-        {
-          type: 'spacer',
-          size: 'sm'
-        }
-      ],
-      flex: 0
-    }
+      }
+    ]
   }
 }
