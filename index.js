@@ -78,7 +78,7 @@ bot.on('message', async (event) => {
       flex.contents.contents[1].footer.contents[0].text = `${$$$('.brief').text()}`
       flex.contents.contents[1].body.contents[1].contents[0].contents[0].text = `${dprice}`
 
-      console.log('done')
+      console.log($$$('.brief').text().includes('kcal'))
       event.reply(flex)
     } catch (error) {
       console.log(error)
