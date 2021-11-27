@@ -62,11 +62,11 @@ bot.on('message', async (event) => {
         }
       }
 
-      if ($$('.brief').text().indexOf('kcal')) {
+      if ($$('.brief').text().includes('kcal')) {
         flex.contents.contents[0].footer.contents[0].text = `${$$('.brief').text()}`
       }
 
-      if ($$$('.brief').text().indexOf('kcal')) {
+      if ($$$('.brief').text().includes('kcal')) {
         flex.contents.contents[1].footer.contents[0].text = `${$$$('.brief').text()}`
       }
 
