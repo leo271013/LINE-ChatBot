@@ -1,6 +1,6 @@
 export default {
   type: 'flex',
-  altText: '123456',
+  altText: '有好多好多早餐在這裡',
   contents: {
     type: 'carousel',
     contents: [
@@ -29,11 +29,12 @@ export default {
           contents: [
             {
               type: 'text',
-              text: '哈密瓜',
-              size: 'lg',
+              text: '哈密瓜哈密瓜哈密瓜哈密',
+              size: 'xl',
               weight: 'bold',
               color: '#FFFFFF',
-              style: 'italic'
+              style: 'italic',
+              wrap: true
             },
             {
               type: 'box',
@@ -45,31 +46,46 @@ export default {
                   layout: 'baseline',
                   contents: [
                     {
-                      type: 'icon',
-                      url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png'
-                    },
-                    {
                       type: 'text',
-                      text: 'NT.50',
+                      text: '時價',
                       weight: 'bold',
-                      margin: 'sm',
+                      margin: 'md',
                       flex: 0,
-                      color: '#FFFFFF'
+                      color: '#FFFFFF',
+                      size: 'md'
                     }
                   ]
                 }
               ]
+            }
+          ],
+          backgroundColor: '#AA0022',
+          margin: 'none'
+        },
+        footer: {
+          type: 'box',
+          layout: 'vertical',
+          contents: [
+            {
+              type: 'text',
+              text: '654.2 kcal',
+              color: '#aaaaaa',
+              size: 'sm',
+              weight: 'bold',
+              align: 'end',
+              wrap: true
             },
             {
               type: 'text',
-              text: '圖片價格僅供參考',
+              text: '資訊僅供參考',
               wrap: true,
               color: '#ffffff',
               size: 'xxs',
               align: 'center'
             }
           ],
-          backgroundColor: '#AA0022'
+          backgroundColor: '#AA0022',
+          margin: 'none'
         }
       },
       {
@@ -97,12 +113,12 @@ export default {
           contents: [
             {
               type: 'text',
-              text: '豆花',
-              size: 'lg',
+              text: '哈密瓜哈',
+              size: 'xl',
               weight: 'bold',
-              color: '#ffffff',
+              color: '#FFFFFF',
               style: 'italic',
-              decoration: 'none'
+              wrap: true
             },
             {
               type: 'box',
@@ -114,31 +130,46 @@ export default {
                   layout: 'baseline',
                   contents: [
                     {
-                      type: 'icon',
-                      url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png'
-                    },
-                    {
                       type: 'text',
-                      text: 'NT.30',
+                      text: '時價',
                       weight: 'bold',
-                      margin: 'sm',
+                      margin: 'md',
                       flex: 0,
-                      color: '#FFFFFF'
+                      color: '#FFFFFF',
+                      size: 'md'
                     }
                   ]
                 }
               ]
+            }
+          ],
+          backgroundColor: '#FFAA55',
+          margin: 'none'
+        },
+        footer: {
+          type: 'box',
+          layout: 'vertical',
+          contents: [
+            {
+              type: 'text',
+              text: '654.2 kcal',
+              color: '#aaaaaa',
+              size: 'sm',
+              weight: 'bold',
+              align: 'end',
+              wrap: true
             },
             {
               type: 'text',
-              text: '圖片價格僅供參考',
+              text: '資訊僅供參考',
               wrap: true,
               color: '#ffffff',
               size: 'xxs',
               align: 'center'
             }
           ],
-          backgroundColor: '#FFAA55'
+          backgroundColor: '#FFAA55',
+          margin: 'none'
         }
       }
     ]
