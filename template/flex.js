@@ -9,7 +9,7 @@ export default {
         size: 'micro',
         hero: {
           type: 'image',
-          url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png',
+          url: 'https://www.macc.com.tw/data/goods/category/cover/1627283092416642209.jpg',
           size: 'full',
           aspectRatio: '20:13',
           aspectMode: 'cover',
@@ -93,7 +93,7 @@ export default {
         size: 'micro',
         hero: {
           type: 'image',
-          url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png',
+          url: 'https://www.macc.com.tw/data/goods/category/cover/1597042960029856619.jpg',
           size: 'full',
           aspectRatio: '20:13',
           aspectMode: 'cover',

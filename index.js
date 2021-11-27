@@ -70,15 +70,24 @@ bot.on('message', async (event) => {
         flex.contents.contents[1].footer.contents[0].text = `${$$$('.brief').text()}`
       }
 
+      if (`${$$('img').eq(0).attr('src')}`.includes('goods')) {
+        flex.contents.contents[0].hero.url = `https://www.macc.com.tw/${$$('img').eq(0).attr('src')}`
+      } else {
+        flex.contents.contents[0].hero.url = 'https://www.macc.com.tw/data/goods/category/cover/1627283092416642209.jpg'
+      }
+
+      if (`${$$$('img').eq(0).attr('src')}`.includes('goods')) {
+        flex.contents.contents[1].hero.url = `https://www.macc.com.tw/${$$$('img').eq(0).attr('src')}`
+      } else {
+        flex.contents.contents[1].hero.url = 'https://www.macc.com.tw/data/goods/category/cover/1597042960029856619.jpg'
+      }
+
       flex.contents.contents[0].body.contents[0].text = $(`${random1}`).find('li').eq(random2).find('a').text()
-      flex.contents.contents[0].hero.url = `https://www.macc.com.tw/${$$('img').eq(0).attr('src')}`
       flex.contents.contents[0].body.contents[1].contents[0].contents[0].text = `${fprice}`
       flex.contents.contents[1].body.contents[0].text = drinks[drandom]
-      flex.contents.contents[1].hero.url = `https://www.macc.com.tw/${$$$('img').eq(0).attr('src')}`
-      flex.contents.contents[1].footer.contents[0].text = `${$$$('.brief').text()}`
       flex.contents.contents[1].body.contents[1].contents[0].contents[0].text = `${dprice}`
 
-      console.log($$$('.brief').text().includes('kcal'))
+      console.log('done')
       event.reply(flex)
     } catch (error) {
       console.log(error)
