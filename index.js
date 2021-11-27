@@ -62,10 +62,13 @@ bot.on('message', async (event) => {
         }
       }
 
+      if ($('.brief').text().indexOf('kcal')) {
+        flex.contents.contents[0].footer.contents[0].text = `${$$('.brief').text()}`
+      }
+
       flex.contents.contents[0].body.contents[0].text = $(`${random1}`).find('li').eq(random2).find('a').text()
       flex.contents.contents[0].hero.url = `https://www.macc.com.tw/${$$('img').eq(0).attr('src')}`
       flex.contents.contents[0].body.contents[1].contents[0].contents[0].text = `${fprice}`
-      flex.contents.contents[0].footer.contents[0].text = `${$$('.brief').text()}`
       flex.contents.contents[1].body.contents[0].text = drinks[drandom]
       flex.contents.contents[1].hero.url = `https://www.macc.com.tw/${$$$('img').eq(0).attr('src')}`
       flex.contents.contents[1].footer.contents[0].text = `${$$$('.brief').text()}`

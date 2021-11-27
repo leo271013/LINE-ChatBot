@@ -68,7 +68,7 @@ export default {
           contents: [
             {
               type: 'text',
-              text: '654.2 kcal',
+              text: '273.7 kcal',
               color: '#aaaaaa',
               size: 'sm',
               weight: 'bold',
@@ -152,7 +152,7 @@ export default {
           contents: [
             {
               type: 'text',
-              text: '654.2 kcal',
+              text: '324.2 kcal',
               color: '#aaaaaa',
               size: 'sm',
               weight: 'bold',
