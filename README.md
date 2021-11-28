@@ -18,14 +18,14 @@ Line聊天機器人-今天吃啥!
 
 *加入好友*
   
-機器人ID:@212qbicp
+機器人ID:@212qbicp  
 ![QR CODE](https://raw.githubusercontent.com/leo271013/LINE-ChatBot/master/img/qr.jpg "QR CODE")
 
 ***
 
 *資料來源*
 
-- 品項參考自*[早安美芝城](https://www.macc.com.tw/)*，來源為:[菜單](https://www.macc.com.tw/product.php#1)
+- 品項參考自[早安美芝城](https://www.macc.com.tw/)，來源為:[菜單](https://www.macc.com.tw/product.php#1)
 - 商品圖片與熱量計算來自[菜單](https://www.macc.com.tw/product.php#1)中產品的各別介紹
 - 價格依據來自[早安美芝城-新莊中華概念店](https://www.google.com/maps/place/%E6%97%A9%E5%AE%89%E7%BE%8E%E8%8A%9D%E5%9F%8E%E6%96%B0%E8%8E%8A%E4%B8%AD%E8%8F%AF%E6%A6%82%E5%BF%B5%E5%BA%97/@25.0384673,121.4497237,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a9199573e007:0xe82c6f1289bf99c8!8m2!3d25.0384673!4d121.4519124)的[線上訂餐平台](https://order.nidin.shop/menu/8788)標價
 
